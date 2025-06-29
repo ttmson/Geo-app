@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 
-model = YOLO('models/best.pt')  # Thay bằng mô hình đã huấn luyện
+model = YOLO('best.pt')  # Thay bằng mô hình đã huấn luyện
 
 def detect_shapes(img_array):
     results = model(img_array)
